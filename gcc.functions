@@ -2,7 +2,7 @@
 # Copyright © 2016 The developers of libertine linux's package gcc. See the COPYRIGHT file in the top-level directory of this distribution and at https://raw.githubusercontent.com/libertine-linux-packages/gcc/master/COPYRIGHT.
 
 
-variant=gcc-5.3.0
+variant=tarball
 
 case "$package" in
 	

@@ -2,12 +2,14 @@
 # Copyright © 2016 The developers of libertine linux's package gcc. See the COPYRIGHT file in the top-level directory of this distribution and at https://raw.githubusercontent.com/libertine-linux-packages/gcc/master/COPYRIGHT.
 
 
-variant=tarball
-
 case "$package" in
 	
 	build_musl_cross_make_gcc)
-	
+		
+		variant=empty
+		
+		copy_subset="$variant"
+		
 		libertine_compile_build_musl_cross_make_gcc()
 		{
 			:
@@ -16,7 +18,9 @@ case "$package" in
 	;;
 	
 	gcc)
-	
+
+		variant=tarball
+		
 		libertine_compile_gcc()
 		{
 			core_exitError 1 "Not implemented"
